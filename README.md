@@ -16,7 +16,7 @@
 7. To build and run the docker container
    `docker-compose up --build`
 8. To run the docker container in detach mode
-   `docker-compose up -d`
+   `docker-compose up -d
 9. To generate requirements.txt file after new package installation 
    `pipenv requirements > requirements.txt
 10. To run docker-compose in detached mode
