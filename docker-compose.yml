@@ -10,12 +10,15 @@ services:
       - .:/home/appuser
     depends_on:
       - db
+    environment:
+      - "DJANGO_SECRET_KEY=django-insecure-95#ga(%e-wm)_q2uoo++szvivb9u*qs=)9i#_#8uchs&pfbhb#"
+      - "DJANGO_DEBUG=True"
   db:
     image: postgres:14
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     environment:
       - "POSTGRES_HOST_AUTH_METHOD=trust"
-
+      
 volumes:
     postgres_data:
