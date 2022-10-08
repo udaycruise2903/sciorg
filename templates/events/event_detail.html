@@ -1,0 +1,20 @@
+{% extends "_base.html" %}
+
+{% block title %}{{ event.title }}{% endblock title %}
+
+{% block content %}
+  <div class="event-detail">
+    <br><br><br><br>
+    <h2><a href="">{{ event.title }}</a></h2>
+    <h5>by {{ event.organiser }} </h5>
+    <br>
+
+    {% if event.start_date == event.end_date %}
+    <p>Date: {{ event.start_date }}
+    {% else %}
+    <p>Date: {{ event.start_date }} to {{ event.end_date }}</p>
+    {% endif %}
+    <p>Time: {{ event.start_time }} to {{ event.end_time }}</p>
+    <p>About: {{ event.description }}</p>
+  </div>
+{% endblock content %}

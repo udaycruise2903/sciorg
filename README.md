@@ -22,4 +22,5 @@
 10. To run docker-compose in detached mode
    $`docker-compose exec web python manage.py migrate`
    $`docker-compose exec web python manage.py createsuperuser`
-11. 
+11. run this before deploying static files to production
+   `$ docker-compose exec web python collectstatic`
