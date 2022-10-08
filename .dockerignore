@@ -1,3 +1,4 @@
 # Ignoring git and cache folders
+.venv
 .git
 .gitignore
