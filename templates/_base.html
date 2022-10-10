@@ -24,6 +24,12 @@
             <a class="nav-link" href="{% url 'event_list' %}">Events</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="{% url 'member_list' %}">Members</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'initiative_list' %}">Initiatives</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="{% url 'about' %}">About</a>
           </li>
           {% if user.is_authenticated %}
