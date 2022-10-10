@@ -49,7 +49,9 @@ INSTALLED_APPS = [
     #Local 
     "accounts.apps.AccountsConfig",
     "pages.apps.PagesConfig",
-    "events.apps.EventsConfig"
+    "events.apps.EventsConfig",
+    "members.apps.MembersConfig",
+    "initiatives.apps.InitiativesConfig"
 ]
 
 # django-crispy-forms

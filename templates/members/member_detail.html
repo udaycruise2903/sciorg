@@ -1,0 +1,14 @@
+{% extends "_base.html" %}
+
+{% block name %}{{ member.name }}{% endblock name %}
+
+{% block content %}
+  <div class="member-detail">
+    <br><br><br><br>
+    <h2><a href="">{{ member.name }}</a></h2>
+    <h5>{{ member.qualification }} </h5>
+    <h5>{{ member.profession }} </h5> 
+    <br>
+    <p>About: {{ member.description }}</p>
+  </div>
+{% endblock content %}
